@@ -1,0 +1,50 @@
+# Entorno virtual
+
+.venv/
+venv/
+env/
+
+# Archivos de Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+
+.ipynb_checkpoints/
+__pycache__
+
+# Variables de entorno
+
+.venv
+
+# Archivos del sistema
+
+.DS_Store
+Thumbs.db
+
+# Configuración de editores
+
+.vscode/
+.idea/
+
+# Archivos temporales
+
+*.tmp
+*.log
+
+# Datos procesados generados
+
+data/
+
+# Gráficos y resultados generados
+
+outputs/graficos/*
+outputs/resultados/*
+
+# Mantener las carpetas vacías en Git
+
+!outputs/graficos/.gitkeep
+!outputs/resultados/.gitkeep
+!data/processed/.gitkeep
