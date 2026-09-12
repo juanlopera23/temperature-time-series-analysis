@@ -68,7 +68,19 @@ def outlire_detection (df):
 
     return monthly_outliers
 
+def summarize_monthly_outliers (dict):
+
+    dictionary={}
+    month=[]
+    outlier=[]
+
+    for key, value in dict.items():
+
+        month.append(key)
+        outlier.append(len(value))
 
 
+    dictionary["Months"]= month
+    dictionary["Outliers"]= outlier
 
-
+    return pd.DataFrame(dictionary).set_index("Months")

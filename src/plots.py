@@ -31,3 +31,14 @@ def boxplot_temperature_analysis (df, month):
     plt.suptitle("")
 
     plt.show()
+
+def barplot_outliers (df):
+
+    ax = df.plot(kind="bar")
+
+
+    ax.set_title("Monthly Temperature Outliers")
+    ax.set_xlabel("Month")
+    ax.set_ylabel("Number of Outliers")
+    
+    plt.show()
